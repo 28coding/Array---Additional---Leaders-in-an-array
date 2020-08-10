@@ -1,0 +1,13 @@
+# Array---Additional---Leaders-in-an-array | InterviewBit Coding
+vector<int> Solution::solve(vector<int> &A) 
+{
+    vector<int> ans;
+    int max=0;
+    for(int i=A.size()-1;i>=0;i--)
+        if(A[i]>max)
+        {
+            max = A[i];
+            ans.push_back(max);
+        }
+    return ans;
+}
